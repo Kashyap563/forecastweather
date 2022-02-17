@@ -1,0 +1,18 @@
+{
+  "name": "weather_forecast",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "author": "Kashyap",
+  "license": "ISC",
+  "dependencies": {
+    "fs": "0.0.1-security",
+    "http": "0.0.1-security",
+    "nodemon": "^2.0.14",
+    "requests": "^0.3.0"
+  }
+}
