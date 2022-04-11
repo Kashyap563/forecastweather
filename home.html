@@ -234,7 +234,7 @@
         </h2>
         <p id="date">none</p>
         <h1 class="temp">{%tempval%} <sup>o</sup>C</h1>
-        <h3 class="tempmin_max">Min {%tempmin%}K | Max {%tempmax%}K</h3>
+        <h3 class="tempmin_max">Min {%tempmin%} <sup>o</sup>C | Max {%tempmax%} <sup>o</sup>C</h3>
     </div> 
     </div>
 
@@ -282,7 +282,7 @@
 
             ];
             var now =new Date();
-            var month = months[now.getMonth()+1];
+            var month = months[now.getMonth()];
             var date=now.getDate();
             
             let hours=now.getHours();

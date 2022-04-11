@@ -14,11 +14,10 @@ const replaceVal=(tempVal,orgVal)=>{
 }
 const server = http.createServer((req,res)=>{
    if (req.url=="/"){
-      requests("https://api.openweathermap.org/data/2.5/weather?q=London&units=metric&appid=1469f48b83180af410b12ac881642d1f")
+      requests("https://api.openweathermap.org/data/2.5/weather?q=Delhi&units=metric&appid=1469f48b83180af410b12ac881642d1f")
       .on("data",function(chunk){
           const objdata=JSON.parse(chunk);
-          const arrData=[objdata
-          ];
+          const arrData=[objdata];
          // console.log(arrData[0].main.temp);
          const realTimeData=arrData.map((val)=>replaceVal(homeFile,val)).join('');
          res.write(realTimeData);
